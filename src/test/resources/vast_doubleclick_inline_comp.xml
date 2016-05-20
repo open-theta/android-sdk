@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0.1" xsi:noNamespaceSchemaLocation="vast.xsd">
+	<Ad id="222296909">
+		<InLine>
+			<AdSystem version="2.0">DART_DFA</AdSystem>
+			<AdTitle>In-Stream Video</AdTitle>
+			<Description>parisian love - updated</Description>
+			<Survey/>
+			<Impression id="DART"><![CDATA[
+http://ad.doubleclick.net/imp;v7;x;222296909;0-0;0;45922216;0/0;35460632/35478450/2;;~aopt=0/0/ff/0;~cs=h%3fhttp://s0.2mdn.net/dot.gif
+]]></Impression>
+			<Creatives>
+				<Creative sequence="1" AdID="">
+					<Linear>
+						<Duration>00:00:52</Duration>
+						<TrackingEvents>
+							<Tracking event="start"><![CDATA[
+http://ad.doubleclick.net/activity;src=1379578;met=1;v=1;pid=45922216;aid=222296909;ko=0;cid=35460632;rid=35478450;rv=2;timestamp=1093213;eid1=11;ecn1=1;etm1=0;
+]]></Tracking>
+							<Tracking event="midpoint"><![CDATA[
+http://ad.doubleclick.net/activity;src=1379578;met=1;v=1;pid=45922216;aid=222296909;ko=0;cid=35460632;rid=35478450;rv=2;timestamp=1093213;eid1=18;ecn1=1;etm1=0;
+]]></Tracking>
+							<Tracking event="complete"><![CDATA[
+http://ad.doubleclick.net/activity;src=1379578;met=1;v=1;pid=45922216;aid=222296909;ko=0;cid=35460632;rid=35478450;rv=2;timestamp=1093213;eid1=13;ecn1=1;etm1=0;
+]]></Tracking>
+							<Tracking event="mute"><![CDATA[
+http://ad.doubleclick.net/activity;src=1379578;met=1;v=1;pid=45922216;aid=222296909;ko=0;cid=35460632;rid=35478450;rv=2;timestamp=1093213;eid1=16;ecn1=1;etm1=0;
+]]></Tracking>
+							<Tracking event="pause"><![CDATA[
+http://ad.doubleclick.net/activity;src=1379578;met=1;v=1;pid=45922216;aid=222296909;ko=0;cid=35460632;rid=35478450;rv=2;timestamp=1093213;eid1=15;ecn1=1;etm1=0;
+]]></Tracking>
+							<Tracking event="fullscreen"><![CDATA[
+http://ad.doubleclick.net/activity;src=1379578;met=1;v=1;pid=45922216;aid=222296909;ko=0;cid=35460632;rid=35478450;rv=2;timestamp=1093213;eid1=19;ecn1=1;etm1=0;
+]]></Tracking>
+						</TrackingEvents>
+						<AdParameters/>
+						<VideoClicks>
+							<ClickThrough><![CDATA[ http://google.com ]]></ClickThrough>
+							<ClickTracking id="DART"><![CDATA[
+http://ad.doubleclick.net/click%3Bh%3Dv8/3e99/3/0/%2a/f%3B222296909%3B0-0%3B0%3B45922216%3B255-0/0%3B35460632/35478450/2%3B%3B%7Eaopt%3D0/0/ff/0%3B%7Esscs%3D%3fhttp://s0.2mdn.net/dot.gif
+]]></ClickTracking>
+						</VideoClicks>
+						<MediaFiles>
+                            <MediaFile id="0" type="video/mp4" delivery="progressive" bitrate="766" width="854" height="480"><![CDATA[
+                                http://files.nexage.com/SDK/VAST-Demo/sdkdemo.mp4
+                            ]]></MediaFile>
+							<MediaFile id="1" delivery="streaming" type="video/x-flv" bitrate="766" width="854" height="480"><![CDATA[
+rtmp://rmcdn.f.2mdn.net/ondemand/MotifFiles/html/1379578/parisian_love_126566284014011.flv
+]]></MediaFile>
+							<MediaFile id="2" delivery="progressive" type="video/x-flv" bitrate="766" width="854" height="480"><![CDATA[
+http://gcdn.2mdn.net/MotifFiles/html/1379578/parisian_love_126566284014011.flv
+]]></MediaFile>
+						</MediaFiles>
+					</Linear>
+				</Creative>
+				<Creative sequence="1" AdID="">
+					<CompanionAds>
+						<Companion id="1" width="300" height="250">
+							<StaticResource creativeType="application/x-shockwave-flash"><![CDATA[
+http://s0.2mdn.net/1379578/PID_1244559_1265644799000_parisian_love_300x250.swf
+]]></StaticResource>
+							<CompanionClickThrough><![CDATA[ http://google.com ]]></CompanionClickThrough>
+							<AltText/>
+							<AdParameters/>
+						</Companion>
+						<Companion id="2" width="300" height="250">
+							<StaticResource creativeType="image/jpeg"><![CDATA[
+http://s0.2mdn.net/1379578/PID_1244559_1265644904000_parisian_love_300x250.jpg
+]]></StaticResource>
+							<CompanionClickThrough><![CDATA[ http://google.com ]]></CompanionClickThrough>
+							<AltText/>
+							<AdParameters/>
+						</Companion>
+						<Companion id="3" width="728" height="90">
+							<StaticResource creativeType="image/jpeg"><![CDATA[
+http://s0.2mdn.net/1379578/PID_1244559_1265644932000_parisian_love_728x90.jpg
+]]></StaticResource>
+							<CompanionClickThrough><![CDATA[ http://google.com ]]></CompanionClickThrough>
+							<AltText/>
+							<AdParameters/>
+						</Companion>
+						<Companion id="4" width="728" height="90">
+							<StaticResource creativeType="application/x-shockwave-flash"><![CDATA[
+http://s0.2mdn.net/1379578/PID_1244559_1265644945000_parisian_love_728x90.swf
+]]></StaticResource>
+							<CompanionClickThrough><![CDATA[ http://google.com ]]></CompanionClickThrough>
+							<AltText/>
+							<AdParameters/>
+						</Companion>
+					</CompanionAds>
+				</Creative>
+				<Creative sequence="2" AdID="">
+					<NonLinearAds>
+						<TrackingEvents>
+							<Tracking event="start"><![CDATA[
+http://ad.doubleclick.net/activity;src=1379578;met=1;v=1;pid=45922216;aid=222296909;ko=0;cid=35460632;rid=35478450;rv=2;timestamp=1093213;eid1=11;ecn1=1;etm1=0;
+]]></Tracking>
+							<Tracking event="midpoint"><![CDATA[
+http://ad.doubleclick.net/activity;src=1379578;met=1;v=1;pid=45922216;aid=222296909;ko=0;cid=35460632;rid=35478450;rv=2;timestamp=1093213;eid1=18;ecn1=1;etm1=0;
+]]></Tracking>
+							<Tracking event="complete"><![CDATA[
+http://ad.doubleclick.net/activity;src=1379578;met=1;v=1;pid=45922216;aid=222296909;ko=0;cid=35460632;rid=35478450;rv=2;timestamp=1093213;eid1=13;ecn1=1;etm1=0;
+]]></Tracking>
+							<Tracking event="mute"><![CDATA[
+http://ad.doubleclick.net/activity;src=1379578;met=1;v=1;pid=45922216;aid=222296909;ko=0;cid=35460632;rid=35478450;rv=2;timestamp=1093213;eid1=16;ecn1=1;etm1=0;
+]]></Tracking>
+							<Tracking event="pause"><![CDATA[
+http://ad.doubleclick.net/activity;src=1379578;met=1;v=1;pid=45922216;aid=222296909;ko=0;cid=35460632;rid=35478450;rv=2;timestamp=1093213;eid1=15;ecn1=1;etm1=0;
+]]></Tracking>
+							<Tracking event="fullscreen"><![CDATA[
+http://ad.doubleclick.net/activity;src=1379578;met=1;v=1;pid=45922216;aid=222296909;ko=0;cid=35460632;rid=35478450;rv=2;timestamp=1093213;eid1=19;ecn1=1;etm1=0;
+]]></Tracking>
+						</TrackingEvents>
+						<NonLinear id="1" width="400" height="150" scalable="false" maintainAspectRatio="false">
+							<StaticResource creativeType="image/jpeg"><![CDATA[
+http://s0.2mdn.net/1379578/PID_1244559_1281625520000_google.jpg
+]]></StaticResource>
+							<NonLinearClickThrough><![CDATA[ http://google.com ]]></NonLinearClickThrough>
+							<AdParameters/>
+						</NonLinear>
+					</NonLinearAds>
+				</Creative>
+			</Creatives>
+			<Extensions>
+				<Extension type="DART">
+					<AdServingData>
+						<DeliveryData>
+							<GeoData><![CDATA[ ct=US&st=MA&ac=0&zp=02212&bw=4&dma=8&city=13250 ]]></GeoData>
+						</DeliveryData>
+					</AdServingData>
+				</Extension>
+			</Extensions>
+		</InLine>
+	</Ad>
+</VAST>

@@ -30,3 +30,5 @@ proguard/
 
 # Android Studio captures folder
 captures/
+
+demo/unitTests/.settings/org.eclipse.jdt.core.prefs

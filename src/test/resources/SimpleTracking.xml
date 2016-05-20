@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+    <Ad id="xrVrw7pPaXf2vbZiWCi7">
+        <InLine>
+            <AdSystem version="1.0">PlayTime</AdSystem>
+            <AdTitle>Mitsubishi SXSW: PR: TM : Vast FLV</AdTitle>
+            <Impression id="NX_AUDIT">
+                http://audit.promo.tubemogul.com/pics/view.png?feedId=ipyMwaO9IKkr7ljUG4Jx&amp;rand=266400
+            </Impression>
+            <Impression id="NX_COMSCORE">
+                http://b.scorecardresearch.com/p?c1=1&amp;c2=7213269&amp;c3=7213269&amp;c4=&amp;c5=120000&amp;c6=
+            </Impression>
+            <Impression id="NX_IMPRESSION">
+                http://inplay-ad04.tubemogul.com/StreamReceiver/pixel?e=imp&amp;ver=1&amp;sessId=IJUiknQiQ37XJAI4THHC&amp;type=video&amp;adId=xrVrw7pPaXf2vbZiWCi7&amp;dur=15&amp;videoURL=http%3A%2F%2Fads.tubemogul.com%2Fad_promoted_videos%2F5069_Aau4jfITOrM9Qot5kX75_1302715881.mp4&amp;vc=0&amp;date=1305211966582&amp;auth=de1d0e1f2bd9aee0e6361f3bef206b5e
+            </Impression>
+            <Creatives>
+                <Creative>
+                    <Linear>
+                        <Duration>00:00:15</Duration>
+                        <TrackingEvents>
+                            <Tracking event="firstQuartile">
+                                http://inplay-ad04.tubemogul.com/StreamReceiver/pixel?e=pct25&amp;ver=1&amp;sessId=IJUiknQiQ37XJAI4THHC&amp;adId=xrVrw7pPaXf2vbZiWCi7&amp;date=1305211966582&amp;dur=15&amp;auth=de1d0e1f2bd9aee0e6361f3bef206b5e
+                            </Tracking>
+                            <Tracking event="midpoint">
+                                http://inplay-ad04.tubemogul.com/StreamReceiver/pixel?e=pct50&amp;ver=1&amp;sessId=IJUiknQiQ37XJAI4THHC&amp;adId=xrVrw7pPaXf2vbZiWCi7&amp;date=1305211966582&amp;dur=15&amp;auth=de1d0e1f2bd9aee0e6361f3bef206b5e
+                            </Tracking>
+                            <Tracking event="thirdQuartile">
+                                http://inplay-ad04.tubemogul.com/StreamReceiver/pixel?e=pct75&amp;ver=1&amp;sessId=IJUiknQiQ37XJAI4THHC&amp;adId=xrVrw7pPaXf2vbZiWCi7&amp;date=1305211966582&amp;dur=15&amp;auth=de1d0e1f2bd9aee0e6361f3bef206b5e
+                            </Tracking>
+                            <Tracking event="complete">
+                                http://inplay-ad04.tubemogul.com/StreamReceiver/pixel?e=pct100&amp;ver=1&amp;sessId=IJUiknQiQ37XJAI4THHC&amp;adId=xrVrw7pPaXf2vbZiWCi7&amp;date=1305211966582&amp;dur=15&amp;auth=de1d0e1f2bd9aee0e6361f3bef206b5e
+                            </Tracking>
+                        </TrackingEvents>
+                        <MediaFiles>
+                            <MediaFile height="300" width="400" bitrate="500" type="video/mp4" delivery="progressive">
+                                http://nexage.s3.amazonaws.com/SDK/netcheck/btrll.mp4
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>
+

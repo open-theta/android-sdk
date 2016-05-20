@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- VAST document with one InLine ad -->
+<VAST version="2.0.1">
+	<Ad id="601364">
+		<InLine>
+			<AdSystem>Acudeo Compatible</AdSystem>
+			<AdTitle>VAST 2.0 Instream Test 1</AdTitle>
+			<Description>VAST 2.0 Instream Test 1</Description>
+			<Survey>http://adtrk.nexage.com/SurveyReceiver/pixel?e=survey</Survey>
+			<Error>http://adtrk.nexage.com/ErrorReceiver/pixel?e=error</Error>
+			<Impression id="first">http://adtrk.nexage.com/ImpReceiver/pixel?e=firstImpression</Impression>
+			<Impression id="second">http://adtrk.nexage.com/ImpReceiver/pixel?e=anotherImpression</Impression>
+			<Impression id="third">http://adtrk.nexage.com/ImpReceiver/pixel?e=thirdImpression</Impression>
+			<Creatives>
+				<Creative id="6012" AdID="601364" sequence="1">
+					<Linear>
+						<Duration>00:00:30</Duration>
+						<TrackingEvents>
+							<Tracking event="creativeView">http://adtrk.nexage.com/creativeView</Tracking>
+							<Tracking event="start">http://adtrk.nexage.com/ImpReceiver/pixel?e=start1</Tracking>
+							<Tracking event="start">http://adtrk.nexage.com/ImpReceiver/pixel?e=start2</Tracking>
+							<Tracking event="midpoint">http://adtrk.nexage.com/ImpReceiver/pixel?e=midpoint</Tracking>
+							<Tracking event="firstQuartile">http://adtrk.nexage.com/ImpReceiver/pixel?e=firstQuartile</Tracking>
+							<Tracking event="thirdQuartile">http://adtrk.nexage.com/ImpReceiver/pixel?e=thirdQuartile</Tracking>
+							<Tracking event="complete">http://adtrk.nexage.com/ImpReceiver/pixel?e=complete</Tracking>
+							<Tracking event="mute">http://adtrk.nexage.com/ImpReceiver/pixel?e=mute</Tracking>
+							<Tracking event="unmute">http://adtrk.nexage.com/ImpReceiver/pixel?e=unmute</Tracking>
+							<Tracking event="pause">http://adtrk.nexage.com/ImpReceiver/pixel?e=pause</Tracking>
+							<Tracking event="rewind">http://adtrk.nexage.com/ImpReceiver/pixel?e=rewind</Tracking>
+							<Tracking event="resume">http://adtrk.nexage.com/ImpReceiver/pixel?e=resume</Tracking>
+							<Tracking event="fullscreen">http://adtrk.nexage.com/ImpReceiver/pixel?e=fullscreen</Tracking>
+							<Tracking event="expand">http://adtrk.nexage.com/ImpReceiver/pixel?e=expand</Tracking>
+							<Tracking event="collapse">http://adtrk.nexage.com/ImpReceiver/pixel?e=collapse</Tracking>
+							<Tracking event="acceptInvitation">http://adtrk.nexage.com/ImpReceiver/pixel?e=acceptInvitation</Tracking>
+							<Tracking event="close">http://adtrk.nexage.com/ImpReceiver/pixel?e=close</Tracking>
+						</TrackingEvents>
+						<AdParameters><![CDATA[params=for&request=gohere]]></AdParameters>
+						<VideoClicks>
+							<ClickThrough><![CDATA[http://www.nexage.com]]></ClickThrough>
+							<ClickTracking id="first">http://adtrk.nexage.com/ImpReceiver/pixel?e=click1</ClickTracking>
+							<ClickTracking id="second">http://adtrk.nexage.com/ImpReceiver/pixel?e=click2</ClickTracking>
+							<CustomClick id="customOne">http://adtrk.nexage.com/ImpReceiver/pixel?e=custom1</CustomClick>
+							<CustomClick id="customTwo">http://adtrk.nexage.com/ImpReceiver/pixel?e=custom2</CustomClick>
+						</VideoClicks>
+						<MediaFiles>
+						</MediaFiles>
+					</Linear>
+				</Creative>
+				<Creative AdID="601364-Companion">
+					<CompanionAds>
+						<Companion id="big_box" width="300" height="250" expandedWidth="600" expandedHeight="500" apiFramework="VPAID">
+							<StaticResource creativeType="image/jpeg">http://demo.tremormedia.com/proddev/vast/Blistex1.jpg</StaticResource>
+							<TrackingEvents>
+								<Tracking event="creativeView">http://myTrackingURL/firstCompanionCreativeView</Tracking>
+							</TrackingEvents>
+							<CompanionClickThrough>http://www.tremormedia.com</CompanionClickThrough>
+							<AltText>Display this instead of the ad</AltText>
+						</Companion>
+						<Companion width="728" height="90">
+							<IFrameResource>http://ad3.liverail.com/util/companions.php</IFrameResource>
+							<CompanionClickThrough>
+                                                 http://www.tremormedia.com
+                                                </CompanionClickThrough>
+						</Companion>
+					</CompanionAds>
+				</Creative>
+				<Creative AdID="601365">
+					<NonLinearAds>
+						<NonLinear id="special_overlay" width="300" height="50" expandedWidth="600" expandedHeight="500" apiFramework="VPAID" scalable="true" maintainAspectRatio="true">
+							<StaticResource creativeType="image/jpeg">http://cdn.liverail.com/adasset/228/330/overlay.jpg</StaticResource>
+							<NonLinearClickThrough>http://t3.liverail.com</NonLinearClickThrough>
+						</NonLinear>
+						<NonLinear width="728" height="90">
+							<IFrameResource>http://ad3.liverail.com/util/non_linear.php</IFrameResource>
+							<NonLinearClickThrough>http://www.tremormedia.com</NonLinearClickThrough>
+						</NonLinear>
+					</NonLinearAds>
+				</Creative>
+			</Creatives>
+			<Extensions>
+				<Extension type="DART">
+					<AdServingData>
+						<DeliveryData>
+							<GeoData><![CDATA[ct=CA&st=ON&ac=905&zp=L6V1X9&bw=0&dma=1&city=1869]]></GeoData>
+						</DeliveryData>
+					</AdServingData>
+				</Extension>
+				<Extension type="value">
+					<CostPerThousand currency="CAD">
+                   125.00
+                </CostPerThousand>
+				</Extension>
+			</Extensions>
+		</InLine>
+	</Ad>
+</VAST>
