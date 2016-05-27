@@ -20,7 +20,9 @@ Getting Started
 ===============
 
 Step 1: Import the VAST project into your Eclipse workspace.
+
 Step 2: Include the VAST library in your project under Project Properties -> Android -> Library.
+
 Step 3: Add the following Activity into AndroidManifest.xml under the <application> tag.
 
 	<activity
