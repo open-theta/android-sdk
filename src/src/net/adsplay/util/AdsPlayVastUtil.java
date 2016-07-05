@@ -27,8 +27,8 @@ public class AdsPlayVastUtil {
 	public static final int FPT_PLAY_VOD_ANDROID_APP = 306;	
 	public static final int FPT_PLAY_VOD_ANDROID_SMART_TV = 308;
 	
-	public static String getVastUrlForDemo(String uuid){			
-		return getVastUrl(uuid, FPT_PLAY_PLACEMENT_MOBILE_TEST, USER_TYPE_GUEST);
+	public static String getVastUrlForDemo(String contentId,String categoryId,String uuid){			
+		return getVastUrl(contentId,categoryId,uuid, FPT_PLAY_PLACEMENT_MOBILE_TEST, USER_TYPE_GUEST);
 	}
 	
 	/**
@@ -43,12 +43,14 @@ public class AdsPlayVastUtil {
 	 * @param userType
 	 * @return
 	 */
-	public static String getVastUrl(String uuid, int placementId, int userType){			
+	public static String getVastUrl(String contentId,String categoryId,String uuid, int placementId, int userType){			
 		int t = (int) (System.currentTimeMillis()/1000L);		
 		int s = baseDeliveryUrls.length;
 		String baseUrl = baseDeliveryUrls[t % s];
 		StringBuilder url = new StringBuilder(baseUrl);
-		url.append("?placement=").append(placementId);		
+		url.append("?placement=").append(placementId);
+		url.append("&ctid=").append(contentId);
+		url.append("&catid=").append(categoryId);
 		url.append("&uuid=").append(uuid);
 		url.append("&ut=").append(userType);
 		url.append("&t=").append(t);

@@ -4,6 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -36,7 +37,9 @@ public class AdsPlayVastRequest extends AsyncTask<Activity, Void, String> {
 		
 		//this.url = "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=";
 //		this.url = "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostpod&cmsid=496&vid=short_onecue&correlator=";
-		this.url = AdsPlayVastUtil.getVastUrl(uuid, AdsPlayVastUtil.FPT_PLAY_PLACEMENT_MOBILE_TEST, AdsPlayVastUtil.USER_TYPE_GUEST);
+		String contentId = "";//
+		String categoryId = "";//
+		this.url = AdsPlayVastUtil.getVastUrl(contentId,categoryId,uuid, AdsPlayVastUtil.FPT_PLAY_PLACEMENT_MOBILE_TEST, AdsPlayVastUtil.USER_TYPE_GUEST);
 		VASTLog.i(TAG,  "VastURL: " + url);		
 		return HttpTools.get(url);
 	}
@@ -60,7 +63,7 @@ public class AdsPlayVastRequest extends AsyncTask<Activity, Void, String> {
 								VASTLog.d("VASTModel",  "getPickedMediaFileURL: " + model.getPickedMediaFileURL());
 								
 								try {
-									Date date = new SimpleDateFormat("HH:mm:ss").parse(model.getTimeOffset());
+									Date date = new SimpleDateFormat("HH:mm:ss", Locale.US).parse(model.getTimeOffset());
 									newPlayer.play(model);
 									VASTLog.d("VASTModel",  "date: " + date);
 								} catch (Exception e) {					

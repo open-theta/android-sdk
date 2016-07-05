@@ -6,10 +6,23 @@
 
 package net.adsplay.util;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.security.KeyManagementException;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
 import java.util.concurrent.TimeUnit;
 
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManagerFactory;
+
+import android.R;
 import android.text.TextUtils;
 
 import com.squareup.okhttp.OkHttpClient;
@@ -68,6 +81,26 @@ public class HttpTools {
 			client = new OkHttpClient();
 			client.setConnectTimeout(5, TimeUnit.SECONDS); // connect timeout
 			client.setReadTimeout(5, TimeUnit.SECONDS);    // socket timeout
+			
+			try {
+				// creating a KeyStore containing our trusted CAs
+				String keyStoreType = KeyStore.getDefaultType();
+				KeyStore keyStore = KeyStore.getInstance(keyStoreType);
+				keyStore.load(null, null);
+				//keyStore.setCertificateEntry("ca", ca);
+				
+				// creating a TrustManager that trusts the CAs in our KeyStore
+				String tmfAlgorithm = TrustManagerFactory.getDefaultAlgorithm();
+				TrustManagerFactory tmf = TrustManagerFactory.getInstance(tmfAlgorithm);
+				tmf.init(keyStore);
+				
+				// creating an SSLSocketFactory that uses our TrustManager
+				SSLContext sslContext = SSLContext.getInstance("TLS");
+				sslContext.init(null, tmf.getTrustManagers(), null);
+				client.setSslSocketFactory(sslContext.getSocketFactory());			 
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 
 		public String run()  {
